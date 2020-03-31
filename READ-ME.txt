@@ -1,0 +1,2 @@
+Ces exercices doivent �tre install�s directement sous la racine d'un domaine. Cela ne fonctionnera pas si vous l'installez dans un sous repertoire.
+Il y a une petite base de donn�es � configurer dans config.php
