@@ -6,8 +6,15 @@
 
 function update_img($NomVignette_tmp,$NomVignette)
 {
-    move_uploaded_file($NomVignette_tmp, 'vignettes/' . $NomVignette);
+
+    $image = imagecreatefrompng('vignettes/'.$NomVignette.'.png');
+    imagejpeg($image, 'vignettes/'.$NomVignette.'.jpg', 70);
+
+    move_uploaded_file($NomVignette_tmp, 'vignettes/' . $image);
+
+
 }
+
 
 if(isset($_POST['upload'])){
     $NomVignette = $_FILES['NomVignette']['name'];
@@ -52,14 +59,18 @@ if(isset($_POST['upload'])){
         </div>
     </div>
     <h2>Vignettes disponibles</h2>
+
     <!-- début gallerie image -->
     <?php
-    $allimg = glob('vignettes/*.{jpg,png,gif}', GLOB_BRACE);
+ 
+    $allimg = array_slice(scandir('vignettes'), 2);
     foreach($allimg as $img) {
         ?>
         <img src="<?php echo $img?>" class="vignettes"/>
     <?php }?>
     <!-- Fin gallerie image -->
+
+
     <script>
         $(document).ready(function() {
             $('.menu-link').menuFullpage();

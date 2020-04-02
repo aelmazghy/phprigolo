@@ -64,12 +64,12 @@ else{
 
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/menufullpage.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/menufullpage.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-1.12.3.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript" language="javascript" src="/js/jquery.cropit.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery.cropit.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700' rel='stylesheet' type='text/css'>
 
